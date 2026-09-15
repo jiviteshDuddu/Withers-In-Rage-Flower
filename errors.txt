@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 102: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Blend into me(Blank Beauty), Rage."
+                                        ^
+
+Ren'Py Version: Ren'Py 8.5.4.26061901+nightly
+Wed Jul 22 17:45:12 2026

@@ -1,0 +1,44 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 39, in script call
+    call  pink_flower
+  File "game/script.rpy", line 42, in script call
+    call  blue_flower
+  File "game/script.rpy", line 44, in script call
+    call excitement
+  File "game/script.rpy", line 78, in script
+    show screen Excitement
+renpy.display.screen.ScreenNotFound: Screen 'Excitement' is not known. Did you mean: 'excitement'?
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 39, in script call
+    call  pink_flower
+  File "game/script.rpy", line 42, in script call
+    call  blue_flower
+  File "game/script.rpy", line 44, in script call
+    call excitement
+  File "game/script.rpy", line 78, in script
+    show screen Excitement
+  File "renpy/ast.py", line 2251, in execute
+    self.call("execute")
+    ~~~~~~~~~^^^^^^^^^^^
+  File "renpy/ast.py", line 2205, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/statements.py", line 381, in call
+    return method(parsed, *args, **kwargs)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/common/000statements.rpy", line 674, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/screen.py", line 1355, in show_screen
+    raise ScreenNotFound(name[0])
+renpy.display.screen.ScreenNotFound: Screen 'Excitement' is not known. Did you mean: 'excitement'?
+
+Windows-11-10.0.26200-SP0 AMD64
+Ren'Py 8.5.4.26061901+nightly
+Withers in Rage Flower 1.0
+Wed Jul 22 17:47:41 2026
